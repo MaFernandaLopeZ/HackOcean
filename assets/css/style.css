@@ -1,7 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --azul1: #0477BF;
+    --azul2: #048ABF;
+    --azul3: #03738C;
+    --verde1:#038c7f;
+    --azul4: #4EA4D9;
+    --azul5: #91D7F2;
+    --amarillo: #F2C230;
+    --melon: #F2B872;
+    --rosa: #F27166;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
 *{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
 }
 
 /* BOTON DE DENUNCIA */
@@ -27,3 +46,13 @@
     margin-left: 15px;
 }
 
+/* nav */
+/* header{
+    margin-left: 100px;
+}
+header nav {
+    display:grid;
+}
+header nav ul {
+    list-style-type: none; <*sin viñetas
+} */

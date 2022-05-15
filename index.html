@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beack Life</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <a class="botonDenunciaPrincipal" href="/resolver-denuncia.html">
@@ -14,11 +15,19 @@
 
     <header>
         <nav>
-            <ul>
-                <li>Ver Playas</li>
-                <li>Mi cuenta</li>
-                <li>Premios</li>
+            <ul class="nav nav-pills">
+                <li class="nav-item"> <a class="nav-link active" href="#">Ver Playas</a></li>
+                <li class="nav-item"><a href="profile.html">Mi cuenta</a> </li>
+                <li class="nav-item"><a href="premios.html">Premios</a></li>
             </ul>
+        </nav>
+
+        <nav class="navbar">
+            <a class="active" href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="ordenar.html">Ordenar</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
     </header>
 
