@@ -8,7 +8,7 @@ Beach*Life* es una Aplicación Web que busca mostrar a turistas, habitantes y Au
 
 Los usuarios tambíen podran realizar Reportes/Denuncias sobre situaciones de contaminación que detecten, estos reportes serán procesados y validados para porteriormente ser enviados a las autoridades correspondientes. Además los usuarios podrán obtener recompensas a cambio de sus contribuciónes a la limpieza de playas, campañas de concientización y acciones que conlleven a la preservación de las playas mexicanas.
 
-## ¿Cómo se visualiza el estado de cpntaminación de las playas?
+## ¿Cómo se visualiza el estado de contaminación de las playas?
 
 La aplicación por medio de la ubicación del usuario y una API realizada por el equipo de BeachLife, mostrará al usuario un mapa con marcadores dependiendo el color /*DEFINIR LOS COLORES*/  estos colores representan el grado de contaminación de acuerdo a los esterocos encontrados por cada 100 mlilitros.
 

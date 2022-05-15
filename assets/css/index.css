@@ -85,6 +85,14 @@ header .icons #menu-bars {
     display: none;
 }
 
+/* section body*/
+.section-body {
+    margin-top: 111px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
 /* chat boot */
 .cont {
     position: fixed;
