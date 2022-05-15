@@ -1,7 +1,4 @@
-h4{
-    color: var(--amarillo);
-}
-.sub-heading{
+.sub-heading-aux{
     color:var(--verde1);
     font-size: 45px;
     padding-top: 35px;

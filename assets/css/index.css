@@ -5,7 +5,7 @@
     --azul2: #048ABF;
     --azul3: #03738C;
     --verde1: #038c7f;
-    --azul4: #4EA4D9;
+    --verde2: #1c774a;
     --azul5: #91D7F2;
     --amarillo: #F2C230;
     --melon: #F2B872;
@@ -101,7 +101,7 @@ header .icons #menu-bars {
 }
 
 .cont .redes a,
-span {
+.span-bot {
     cursor: pointer;
     display: block;
     text-decoration: none;
@@ -117,6 +117,6 @@ span {
 }
 
 .cont .redes a,
-span {
+.span-bot {
     background: var(--verde1);
 }
