@@ -5,7 +5,14 @@ function initMap(lat,lng, beach, classy){
     const myLatLng = { 
         lat: lat, lng: lng
     }
-    var texto=`<h1>${beach} </h1>`+ `<p>Clasificación: ${classy} </p>`
+    
+    if (classy=="APTA"){
+        var color="green"
+    }else{
+        var color="red"
+    }
+
+    var texto=`<div style="background-color:${color}"><h1 style="color:white">${beach} </h1>`+ `<p style="color:white">Clasificación: ${classy} </p></div>`
     const options= {
         center: myLatLng,
         zoom:7
@@ -28,7 +35,7 @@ function initMap(lat,lng, beach, classy){
 
 function cargarJSON(){
     var id= parseInt(document.getElementById('estado').value)
-    let url=`https://e52e-201-141-45-17.ngrok.io/Procesado/?id=${id}`
+    let url=`https://6fa8-201-141-45-17.ngrok.io/Procesado/?id=${id}`
     fetch(url)
     .then(function(res){
         return res.json();
