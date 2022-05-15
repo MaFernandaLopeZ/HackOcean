@@ -35,7 +35,7 @@ function initMap(lat,lng, beach, classy){
 
 function cargarJSON(){
     var id= parseInt(document.getElementById('estado').value)
-    let url=` https://f6e1-201-141-45-17.ngrok.io/Procesado/?id=${id}`
+    let url=`https://f6e1-201-141-45-17.ngrok.io/Procesado/?id=${id}`
     fetch(url)
     .then(function(res){
         return res.json();
