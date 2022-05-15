@@ -111,3 +111,32 @@ header .icons #menu-bars{
     padding-top: 130px;
     font-weight: bold;
 }
+
+/* chat boot */
+.cont {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  .cont .redes a,span {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 160px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+  }
+  .cont .redes a, span {
+    background:var(--verde1);
+  }
+
+  /* MAPA */
+  .mapa{
+      margin-left: auto;
+      margin-right: auto;
+  }
