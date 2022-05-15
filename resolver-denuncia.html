@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="text/javascript" src="assets/js/index.js"></script>
 </head>
+
 <body>
     <h1>Denuncia a Resolver</h1>
     <h3>Denuncia <span>#</span></h3>
@@ -25,13 +28,21 @@
 
     <form action="">
         <h1>Denuncia</h1>
-     <!--el estado va a depender de la playa que seleccione  -->
+        <!--el estado va a depender de la playa que seleccione  -->
+        <label for="input-observacion">Estado: </label>
         <select name="Estado" id="">
-            <option value="">Estado</option>
+            <option value="" disabled>Selecciona</option>
         </select>
+
+        <label for="input-observacion">Playa: </label>
         <select name="playa" id="">
-            <option value="">Selecciona</option>
+            <option value="" disabled>Selecciona</option>
         </select>
+
+        <label for="input-observacion">Fecha y Hora: </label>
+        <!-- <input type="text" name="" id="reloj" disabled> -->
+        <div id="reloj"></div>
+
         <label for="input-observacion">Observaci&oacute;n</label>
         <textarea name="input-observacion" id="input-observacion" cols="30" rows="10"></textarea>
 
@@ -39,4 +50,6 @@
         <button type="button">Cancelar</button>
     </form>
 </body>
+
 </html>
+<!-- <div id="reloj" style="font-size:20px;"></div> -->
