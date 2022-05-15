@@ -30,7 +30,7 @@ html{
 }
 
 /* BOTON DE DENUNCIA */
-header .botonDenunciaPrincipal{
+/* header .botonDenunciaPrincipal{
     color:#fff;
     background: var(--azul1);
     font-size: 1.7rem;
@@ -38,7 +38,7 @@ header .botonDenunciaPrincipal{
     padding:.5rem 1.5rem;
     color:var(--light-color);
     text-decoration: none;
-}
+} */
 
 .botonDenunciaPrincipal:hover{
     background-color: #03738C;
@@ -48,36 +48,63 @@ header .botonDenunciaPrincipal{
     margin-top: 40px;
     margin-left: 15px;
 }
+/*Header RAMS*/
+header{
+    background-color: var(--azul4);
+    padding: 1rem 5rem;
+}
+
+.contenedor-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 13rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.navbar a{
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+}
 
 /* nav */
-header .navbar a{
+/* header .navbar a{
     font-size: 1.7rem;
     border-radius: .5rem;
     padding:.5rem 1.5rem;
     color:var(--light-color);
     text-decoration: none;
-}
+} */
 
-header{
+/* header{
     position: fixed;
     top:0; left: 0; right:0;
-    background: #fff;
+    background :var(--azul1);
     padding:1rem 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
     box-shadow: var(--box-shadow);
-}
-header .navbar a.active{
+} */
+/* header .navbar a.active{
     color:#fff;
     background: var(--azul1);
-}
-header .navbar .otroN:hover{
+} */
+/* header .navbar .otroN:hover{
     color: var(--azul2);
-}
+} */
 
-header .icons a{
+/* header .icons a{
     cursor: pointer;
     margin-left: .5rem;
     height:4.5rem;
@@ -87,21 +114,21 @@ header .icons a{
     font-size: 20px;
     color: #fff;
     text-decoration: none;
-}
-header .icons{
+} */
+/* header .icons{
     background: var(--verde1);
     padding: 0rem 1.5rem;
     border-radius: 15px;
-}
-header .icons i{
+} */
+/* header .icons i{
     font-size: 2rem;
     cursor: pointer;
     color: #fff;
-}
+} */
 
-header .icons #menu-bars{
+/* header .icons #menu-bars{
     display: none;
-}
+} */
 
 /* Title */
 .sub-heading{
@@ -140,4 +167,25 @@ header .icons #menu-bars{
   .mapa{
       margin-left: auto;
       margin-right: auto;
+  }
+
+
+  /*USUARIO*/
+  .div-user h1, p{
+    text-align: center;
+  }
+
+  .div-user{
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+  }
+
+  .user{
+      width: 6rem;
+  }
+
+  .cnt-user{
+      font-size: 1.5rem;
   }
