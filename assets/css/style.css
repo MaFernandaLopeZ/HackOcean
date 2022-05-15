@@ -6,18 +6,11 @@
     font-weight: bold;
 }
 
-/* section body*/
-.section-body {
-    margin-top: 111px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
-}
-
 /* MAPA */
 .mapa {
     text-align: center;
     padding-top: 30px;
+    width: 640px;
     margin-left: auto;
     margin-right: auto;
 }
