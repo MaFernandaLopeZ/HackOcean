@@ -102,3 +102,12 @@ header .icons i{
 header .icons #menu-bars{
     display: none;
 }
+
+/* Title */
+.sub-heading{
+    text-align: center;
+    color:var(--azul1);
+    font-size: 4rem;
+    padding-top: 130px;
+    font-weight: bold;
+}
