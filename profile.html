@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,10 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denuncia</title>
-    <script type="text/javascript" src="assets/js/index.js"></script>
-    <!-- header -->
-    <link rel="stylesheet" href="/assets/css/styleDemanda.css">
+    <title>My cuenta</title>
+    <link rel="stylesheet" href="/assets/css/styleProfile.css">
     <link rel="stylesheet" href="/assets/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -16,9 +15,10 @@
 </head>
 
 <body>
-
     <header>
-        <a href="index.html"><h4> Beach Life</h4></a>
+        <a href="index.html">
+            <h4> Beach Life</h4>
+        </a>
 
         <nav class="navbar">
             <a class="otroN fa-solid fa-bullhorn" style="color: red;" href="denuncia.html"> D e n u n c i a s</a>
@@ -29,52 +29,21 @@
     </header>
 
     <section class="section-body">
-        <h1 class="sub-heading-aux">Denuncias</h1>
+        <h1 class="sub-heading-aux">Mis Denuncias</h1>
 
-        <section class="section-form">
-            <form action="">
-                <!--el estado va a depender de la playa que seleccione  -->
-                <div class="form-group row">
-                    <label for="select-estado" class="col-sm-2 col-form-label">Estado</label>
-                    <div class="col-sm-5">
-                        <select name="estado" class="form-select" id="select-estado">
-                            <option value="" selected disabled>Selecciona</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Playa</label>
-                    <div class="col-sm-5">
-                        <select name="playa" class="form-select" id="select-playa">
-                            <option value="" selected disabled>Selecciona</option>
-                            <option value="1">fksdfmkfnfjnsfkja</option>
-                            <option value="1">fksdfmkfnfjnsfkja</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="fechaHora" class="col-sm-2 col-form-label">Fecha/Hora</label>
-                    <div class="col-sm-5">
-                        <label for="fechaHora" class="form-control col-sm-2 col-form-label" readonly>
-                            <div id="fechaHora"></div>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="input-observacion" class="col-sm-2 col-form-label">Observaciones</label>
-                    <div class="col-sm-8">
-                        <textarea class="form-control" id="input-observacion" rows="3"></textarea>
-                    </div>
-                </div>
-                
-                <br>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-                <button type="reset" class="btn btn-danger">Cancelar</button>
-            </form>
+        <section class="content-puntos">
+            <button>Haz el cambio</button>
+            <div class="div-puntos">
+                <p>Puntos <span id="no-puntosUsuario">#</span> </p>
+            </div>
         </section>
+
+        <table>
+            <th>No.</th>
+            <th>Descripcion</th>
+            <th>Fecha</th>
+            <th>Status</th>
+        </table>
     </section>
 
     <!-- Boton flotante -->
@@ -86,6 +55,9 @@
         </div>
     </div>
 
+    <!-- <footer>
+        <p>Derechos reservador <br> Clean My beach - 2022</p>
+    </footer> -->
 </body>
 
 </html>
