@@ -1,0 +1,21 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.botonDenunciaPrincipal{
+    width: 120px;
+    height: 120px;
+    background-color: #038C7F;
+    align-items: center;
+    color: #fff;
+    display: flex;
+    /* border-radius: top, right, bottom, left; */
+    border-radius: 0px 0px 220px 0px;
+    /* justify-content: center; */
+}
+.botonDenunciaPrincipal a{
+    color: #fff;
+    text-decoration: none;
+}
