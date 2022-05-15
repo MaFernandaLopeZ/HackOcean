@@ -189,3 +189,41 @@ header{
   .cnt-user{
       font-size: 1.5rem;
   }
+
+  /*USUARIO SECCION*/
+  .espacio{
+    margin: 4rem 4rem 4rem 4rem; 
+  }
+
+  .espacio h2{
+    font-size: 3rem;
+  }
+
+  .espacio-2{
+   margin-top: 2rem;
+   margin-bottom: 8rem; 
+  }
+
+  .espacio-2 h3{
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .btn{
+      background-color: var(--melon);
+      padding: 1rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      font-size: 2rem;
+  }
+
+  /*tabla*/
+  .table th{
+      padding: 0 10rem;
+      text-align: center;
+    font-size: 2rem;
+  }
+
+  .table{
+      margin: 0 auto;
+  }
