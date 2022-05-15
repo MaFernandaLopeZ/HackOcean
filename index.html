@@ -27,19 +27,25 @@
     <section class="section-body">
         <h1 class="sub-heading">Beach Life</h1>
 
-        <section class="mapa">
-            <!-- mapa -->
-            <h1>MAPA</h1>
-        </section>
+        
     </section>
-
+    <section class="mapa">
+        <!-- mapa -->
+        <input type="text" placeholder="estado" id="estado" name="okestado">
+        <button onclick="cargarJSON()">JSON</button>
+        <div id="map" style="width: 640px; height: 480px;"></div>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_JFi2fjbTNJu2uHWjAKyZlLpZ1B-JdcQ&callback=initMap"
+        async defer></script>
+        <footer><script src="assets/js/map.js"></script></footer>
+    </section>
     <!-- Boton flotante -->
     <div class="cont">
         <div class="redes">
             <a href="#" id="boot" target="_BLANK"><span><i class="fa-solid fa-robot" style="cursor: pointer;"></i> Chat Bot</span></a>
         </div>
     </div>
-    <script src="assets/js/geo.js"></script>
+    <!-- <script src="assets/js/geo.js"></script> -->
 </body>
 
 </html>
