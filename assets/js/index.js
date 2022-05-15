@@ -10,6 +10,6 @@ function startTime() {
     h = hoy.getHours();
     m = hoy.getMinutes();
     s = hoy.getSeconds();
-    document.getElementById('reloj').innerHTML = fecha + " " + h + ":" + m + ":" + s;
+    document.getElementById('fechaHora').innerHTML = fecha + " " + h + ":" + m + ":" + s;
 }
 window.onload = function () { startTime(); }

@@ -23,18 +23,11 @@
     transition: all .2s linear;
 }
 
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 5.5rem;
-    scroll-behavior: smooth;
-}
-
 /* nav */
 header .navbar a{
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    padding:.5rem 1.5rem;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 8px 25px;
     color:var(--light-color);
     text-decoration: none;
 }
@@ -84,12 +77,10 @@ header .icons #menu-bars{
     display: none;
 }
 
-/* Title */
 .sub-heading{
-    text-align: center;
-    color:var(--azul2);
-    font-size: 4rem;
-    padding-top: 130px;
+    color:var(--verde1);
+    font-size: 45px;
+    padding-top: 35px;
     font-weight: bold;
 }
 
@@ -117,8 +108,20 @@ header .icons #menu-bars{
     background:var(--verde1);
   }
 
-  /* MAPA */
-  .mapa{
-      margin-left: auto;
-      margin-right: auto;
-  }
+/* section body*/
+.section-body{
+    margin-top: 111px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+/* section form*/
+.section-form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+.form-group{
+    padding-top: 10px;
+}
