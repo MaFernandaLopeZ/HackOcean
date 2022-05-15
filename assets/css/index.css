@@ -1,103 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
-:root{
+:root {
     --azul1: #0477BF;
     --azul2: #048ABF;
     --azul3: #03738C;
-    --verde1:#038c7f;
+    --verde1: #038c7f;
     --azul4: #4EA4D9;
     --azul5: #91D7F2;
     --amarillo: #F2C230;
     --melon: #F2B872;
     --rosa: #F27166;
-    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
 }
 
-*{
+* {
     font-family: 'Nunito', sans-serif;
-    margin:0; padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none; border:none;
+    outline: none;
+    border: none;
     text-transform: capitalize;
     transition: all .2s linear;
 }
 
 /* nav */
-header .navbar a{
+header .navbar a {
     font-size: 16px;
     border-radius: 10px;
     padding: 8px 25px;
-    color:var(--light-color);
+    color: var(--light-color);
     text-decoration: none;
 }
 
-header{
+header {
     position: fixed;
-    top:0; left: 0; right:0;
+    top: 0;
+    left: 0;
+    right: 0;
     background: #fff;
-    padding:1rem 7%;
+    padding: 1rem 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
     box-shadow: var(--box-shadow);
 }
-header .navbar a.active{
-    color:#fff;
+
+header .navbar a.active {
+    color: #fff;
     background: var(--azul1);
 }
-header .navbar .otroN:hover{
+
+header .navbar .otroN:hover {
     color: var(--azul2);
 }
 
-header .icons a{
+header .icons a {
     cursor: pointer;
     margin-left: .5rem;
-    height:4.5rem;
+    height: 4.5rem;
     line-height: 4.5rem;
-    width:4.5rem;
+    width: 4.5rem;
     text-align: center;
     font-size: 20px;
     color: #fff;
     text-decoration: none;
 }
-header .icons{
+
+header .icons {
     background: var(--verde1);
     padding: 0rem 1.5rem;
     border-radius: 15px;
 }
-header .icons i{
+
+header .icons i {
     font-size: 2rem;
     cursor: pointer;
     color: #fff;
 }
 
-header .icons #menu-bars{
+header .icons #menu-bars {
     display: none;
 }
 
-.sub-heading{
-    color:var(--verde1);
-    font-size: 45px;
-    padding-top: 35px;
-    font-weight: bold;
+/* chat boot */
+.cont {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 
-/* section body*/
-.section-body{
-    margin-top: 111px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
+.cont .redes a,
+span {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 160px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.4);
+    transition: all 500ms ease;
 }
 
-/* section form*/
-.section-form{
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-}
-.form-group{
-    padding-top: 10px;
+.cont .redes a,
+span {
+    background: var(--verde1);
 }
