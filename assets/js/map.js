@@ -5,7 +5,14 @@ function initMap(lat,lng, beach, classy){
     const myLatLng = { 
         lat: lat, lng: lng
     }
-    var texto=`<h1>${beach} </h1>`+ `<p>Clasificación: ${classy} </p>`
+    
+    if (classy=="APTA"){
+        var color="green"
+    }else{
+        var color="red"
+    }
+
+    var texto=`<div style="background-color:${color}"><h1 style="color:white">${beach} </h1>`+ `<p style="color:white">Clasificación: ${classy} </p></div>`
     const options= {
         center: myLatLng,
         zoom:7
