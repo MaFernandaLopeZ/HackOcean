@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncia</title>
+</head>
+<body>
+    <form action="">
+        <h1>Denuncia</h1>
+        <!--el estado va a depender de la playa que seleccione  -->
+        <label for="input-observacion">Estado: </label>
+        <select name="Estado" id="">
+            <option value="" disabled>Selecciona</option>
+        </select>
+
+        <label for="input-observacion">Playa: </label>
+        <select name="playa" id="">
+            <option value="" disabled>Selecciona</option>
+        </select>
+
+        <label for="input-observacion">Fecha y Hora: </label>
+        <div id="reloj"></div>
+
+        <label for="input-observacion">Observaci&oacute;n</label>
+        <textarea name="input-observacion" id="input-observacion" cols="30" rows="10"></textarea>
+
+        <button type="submit">Enviar</button>
+        <button type="button">Cancelar</button>
+    </form>
+</body>
+</html>
