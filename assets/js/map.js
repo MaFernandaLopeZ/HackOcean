@@ -52,14 +52,16 @@ function cargarJSON(){
     })
 }
 
+
+
 function getLocation() {
+
     // Verificar si soporta geolocalizacion
     if (navigator.geolocation) {
         console.log("Tu navegador soporta Geolocalizacion");
     } else {
         console.log("Tu navegador no soporta Geolocalizacion");
     }
-
     //Obtenemos latitud y longitud
     function localizacion(posicion) {
 
@@ -67,7 +69,7 @@ function getLocation() {
         var longitude = posicion.coords.longitude;
 
         console.log(latitude + " " + longitude);
-        initMap(latitude,longitude,"Hola","Aquí estás tú")
+        initMap(latitude,longitude,"Hola","")
 
     }
 
@@ -80,22 +82,4 @@ function getLocation() {
 }
 window.onload = function () {
     getLocation();
-}
-
-function cargarJSON(){
-    var id= parseInt(document.getElementById('estado').value)
-    let url=`https://1682-201-141-45-17.ngrok.io/Procesado/?id=${id}`
-    fetch(url)
-    .then(function(res){
-        return res.json();
-    })
-    .then(function(data){
-
-       data.forEach(function(Procesado){
-           initMap(Procesado.LAT, Procesado.LON, Procesado.PLAYA, Procesado.CLASIFICACIÓN)
-
-       })
-       
-
-    })
 }
