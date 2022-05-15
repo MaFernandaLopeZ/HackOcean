@@ -27,4 +27,24 @@ Los reportes realizados por los usuarios tienen la finalidad de recabar problema
 
 Sabemos que es dificil generar conciencia sobre el cuidado de las playas y los oceanos, es por ello que en actualizaciónes posteriores   se busca lograr una colaboracón con las autoridades, dueños de pequeñas, medianas y grandes empresas como Restuarantes, Prestadores de Servicios Turísticos y Hoteles para que brinden premios a los usuarios que por medio de la aplicacón suban pruebas de actividades que beneficien a la conservación de las playas y oceanos.
 
-Cada actividad que los usuarios les generará puntos acumulables, los cuales podrán intercambiar por algún beneficio que ofrescan
+Cada actividad que los usuarios les generará puntos acumulables, los cuales podrán intercambiar por algún beneficio que ofrezcan los establecimientos antes mencionados (el costo de puntos de los premios será acordado por el establecimiento ).
+
+Las actividades para generar puntos pueden ser las siguentes:
+
+* Limpieza de un área determinada de la playa
+* Campañas de concientización
+* Participación en talleres
+* Realizar reportes
+
+## Progreso de la versión actual
+
+La aplicación se encuentra en fase de desarrollo, por lo que la integración de puntos no está aun disponible
+
+ A continuación se presenta una lista de lso puntos que contiene el proyecto final marcando con ✔️ los cumplidos y con una ❌ los que aún están en fase de desarrollo
+
+* Creación de la API para brindar los datos que publica COFEPRIS (Los datos de COFEPRIS se publican en archivos PDF por lo que no es posible consumirlos, es por ello que se está ceando esta API para consumir los datos) ✔️
+* Creación del Formulario de Reportes ✔️
+* Uso de la API de Google Maps para mostrar el Mapa con la ubicación del usuario ✔️
+* Visualizacíon de las playas con marcadores de colores del semaforo ✔️
+* Implementación del sistema de recompensas ❌
+* Implentación del sistema de calificación de las playas por parte de los usuarios ❌
