@@ -22,18 +22,21 @@
     text-transform: capitalize;
     transition: all .2s linear;
 }
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
 
 /* BOTON DE DENUNCIA */
-.botonDenunciaPrincipal{
-    width: 120px;
-    height: 120px;
-    background-color: #038C7F;
-    /* align-items: center; */
-    color: #fff;
-    display: flex;
-    /* border-radius: top, right, bottom, left; */
-    border-radius: 0px 0px 220px 0px;
-    cursor: pointer;
+header .botonDenunciaPrincipal{
+    color:#fff;
+    background: var(--azul1);
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--light-color);
     text-decoration: none;
 }
 
@@ -47,12 +50,55 @@
 }
 
 /* nav */
-/* header{
-    margin-left: 100px;
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--light-color);
+    text-decoration: none;
 }
-header nav {
-    display:grid;
+
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background: #fff;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
 }
-header nav ul {
-    list-style-type: none; <*sin viñetas
-} */
+header .navbar a.active{
+    color:#fff;
+    background: var(--azul1);
+}
+header .navbar .otroN:hover{
+    color: var(--azul2);
+}
+
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+header .icons{
+    background: var(--verde1);
+    padding: 0rem 1.5rem;
+    border-radius: 15px;
+}
+header .icons i{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+header .icons #menu-bars{
+    display: none;
+}
