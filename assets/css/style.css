@@ -119,6 +119,7 @@ header .icons #menu-bars{
     right: 20px;
   }
   .cont .redes a,span {
+      cursor: pointer;
     display: block;
     text-decoration: none;
     color: white;
