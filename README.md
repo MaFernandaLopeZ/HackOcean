@@ -27,4 +27,4 @@ Los reportes realizados por los usuarios tienen la finalidad de recabar problema
 
 Sabemos que es dificil generar conciencia sobre el cuidado de las playas y los oceanos, es por ello que en actualizaciónes posteriores   se busca lograr una colaboracón con las autoridades, dueños de pequeñas, medianas y grandes empresas como Restuarantes, Prestadores de Servicios Turísticos y Hoteles para que brinden premios a los usuarios que por medio de la aplicacón suban pruebas de actividades que beneficien a la conservación de las playas y oceanos.
 
-Cada actividad qye los usuarios les generará puntos acumulables, los cuales podrán intercambiar por algún beneficio que ofrescan
+Cada actividad que los usuarios les generará puntos acumulables, los cuales podrán intercambiar por algún beneficio que ofrescan
