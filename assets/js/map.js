@@ -35,6 +35,55 @@ function initMap(lat,lng, beach, classy){
 
 function cargarJSON(){
     var id= parseInt(document.getElementById('estado').value)
+    
+    let url=`https://1682-201-141-45-17.ngrok.io/Procesado/?id=${id}`
+    fetch(url)
+    .then(function(res){
+        return res.json();
+    })
+    .then(function(data){
+
+       data.forEach(function(Procesado){
+           initMap(Procesado.LAT, Procesado.LON, Procesado.PLAYA, Procesado.CLASIFICACIÓN)
+
+       })
+       
+
+    })
+}
+
+function getLocation() {
+    // Verificar si soporta geolocalizacion
+    if (navigator.geolocation) {
+        console.log("Tu navegador soporta Geolocalizacion");
+    } else {
+        console.log("Tu navegador no soporta Geolocalizacion");
+    }
+
+    //Obtenemos latitud y longitud
+    function localizacion(posicion) {
+
+        var latitude = posicion.coords.latitude;
+        var longitude = posicion.coords.longitude;
+
+        console.log(latitude + " " + longitude);
+        initMap(latitude,longitude,"Hola","Aquí estás tú")
+
+    }
+
+    function error() {
+        console.log("No se pudo obtener tu ubicación");
+
+    }
+
+    navigator.geolocation.getCurrentPosition(localizacion, error);
+}
+window.onload = function () {
+    getLocation();
+}
+
+function cargarJSON(){
+    var id= parseInt(document.getElementById('estado').value)
     let url=`https://1682-201-141-45-17.ngrok.io/Procesado/?id=${id}`
     fetch(url)
     .then(function(res){
