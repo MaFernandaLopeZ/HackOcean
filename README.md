@@ -48,3 +48,56 @@ La aplicación se encuentra en fase de desarrollo, por lo que la integración de
 * Visualizacíon de las playas con marcadores de colores del semaforo ✔️
 * Implementación del sistema de recompensas ❌
 * Implentación del sistema de calificación de las playas por parte de los usuarios ❌
+
+## Chat-Bot - CREACIÓN
+Se creo el Chat-Bot mediante Azure
+
+![img](image/README/Creacion-ChaBot-1.png)
+
+![img](image/README/Creacion-ChaBot-1.png)
+
+Contiene un asistenten virtual llamado Chat-Bot, el cual ayuda a los usuario en cuestiones de usuo de la aplicación mediante palabras clave. 
+La palabra para inicializar el Chat-Bot es "Hola". 
+
+![img](image/README/ChaBot-1.png)
+
+Un ejemplo de ello, te proporciona el Objetivo del proyecto al escribirle Objetivo.
+
+![img](image/README/ChaBot-2.png)
+
+## Sistema de geolocalización con Base de datos en Azure
+
+![AzureBD-1](https://user-images.githubusercontent.com/99064986/168501088-7d4a5f31-7656-4b73-957f-122eeec31371.png)
+
+![AzureBD-2](https://user-images.githubusercontent.com/99064986/168501091-0d2d7dcf-3e0f-4bb3-8cc1-a70b3447649f.png)
+
+
+## API playas de México
+En México contamos con 11,122km de longitud de costa, en el cual algunos organismos del Estado Mexicano realizan pruebas para medir la contaminación en las playas, esta información se difunde en imágenes o archivos PDF en los sitios oficiales de gobierno, y es utilizado en su mayoría por medios de comunicación y algunos turistas para considerar antes de realizar algún viaje.
+
+Repositorio de la API --> https://github.com/jivancm/playas-mex-api
+
+Esta API tiene la intención de ser una fuente de información que permita a diferentes sectores de la sociedad obtener la información de una manera más digerible.
+
+Se cuenta con un padrón de 387 playas ubicadas 76 municipios de 19 entidades de la república.
+
+stos son las rutas que están disponibles para ser consumidas:
+
+Playas
+https://apiplayasmx.herokuapp.com/playas
+
+En esta ruta se devuelve un JSON con la siguiente estructura:
+[ { "id": 1, "nombrePlaya": "Playta de Rosarito", "latitud":32.33555556, "longitud":-117.0577778 }, ... ]
+
+Municipios y estados
+https://apiplayasmx.herokuapp.com/municipios
+https://apiplayasmx.herokuapp.com/estados
+La idea de estos endpoints es la de devolver las playas que se encuentran en esos lugares.
+
+Clasificación
+https://apiplayasmx.herokuapp.com/clasificaciones
+
+Es la calificación o evaluación obtenida por COFEPRIS o SEMARNAT, y que está publicada en diferentes sitios de gobierno.
+
+[ { "id":1, "nombreClasificacion":"APTA", "npm":150, "fechaActualizada":"2022-03-17", "idPlaya":{ "id":1, "nombrePlaya":"Playa de Rosarito", "latitud":32.33555556, "longitud":-117.0577778 } }, ... ]
+
