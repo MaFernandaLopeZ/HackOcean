@@ -22,9 +22,13 @@ La aplicación por medio de la ubicación del usuario y una API realizada por el
 
 Para fines de información los colores representan lo siguiente:
 
-* Verde: 0 a 100npm /100ml
-* Amarillo: entre 100 y 150 npm /100ml
-* Rojo mas de 150 npm /100ml
+* Verde: 0 a 100npm /100ml APTA PARA USO RECREATIVO
+* Amarillo: entre 100 y 150 npm /100ml APTA PARA USO RECREATIVO CON PRECAUCIÓN
+* Rojo mas de 150 npm /100ml NO APTA PARA USO RECREATIVO
+
+![](image/README/1652669688064.png)
+
+*(Servicio ejecutado de forma local)*
 
 ## ¿Para qué sirven los Reportes/Denucias?
 
