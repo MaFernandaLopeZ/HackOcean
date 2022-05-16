@@ -65,6 +65,7 @@ La aplicación se encuentra en fase de desarrollo, por lo que se pensó en la in
 * Visualizacíon de las playas con marcadores de colores del semaforo ✔️
 * Implementación del sistema de recompensas ❌
 * Implentación del sistema de calificación de las playas por parte de los usuarios ✔️
+* Implementación de un Chat Bot ✔️
 
 *Nota: Hasta que se consiga implementar el sistema de recompenzas los usuarios podrán crear una cuenta para poder almacenar los datos, de momento se cuenta solo con el formulario para generar los reportes.*
 
@@ -88,6 +89,8 @@ La palabra para inicializar el Chat-Bot es "Hola".
 Un ejemplo de ello, te proporciona el Objetivo del proyecto al escribirle Objetivo.
 
 ![img](image/README/ChaBot-2.png)
+
+*Nota: debido al costo de mantener funcioando al Chat Bot solo se activó para realizar las pruebas*
 
 ## Sistema de geolocalización con Base de datos en Azure
 
