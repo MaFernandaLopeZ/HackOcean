@@ -34,6 +34,10 @@ Para fines de información los colores representan lo siguiente:
 
 Los reportes realizados por los usuarios tienen la finalidad de recabar problemas de contaminación que sean detetados en las areas donde se encuentren, al realizar un reporte este será analizado para ver su relevancia y porteriormente hacerle llegar a las autoridades correspodientes, al realizar reportes afectará la calificación de la playa, por lo que las autoridades tendrán un punto que deben cubrir si sus playas reciben malas puntuaciones.
 
+Por el momento se implementó un formularaio y el mapa consumiendo el servicio de la API realizada para que en base al estado y playa seleccionada para levantar el reporte se muestre el semáforo al usuario.
+
+![](image/README/1652678482740.png)
+
 ## ¿Cómo funciona el sistema de puntos?
 
 Sabemos que es dificil generar conciencia sobre el cuidado de las playas y los oceanos, es por ello que en actualizaciónes posteriores   se busca lograr una colaboracón con las autoridades, dueños de pequeñas, medianas y grandes empresas como Restuarantes, Prestadores de Servicios Turísticos y Hoteles para que brinden premios a los usuarios que por medio de la aplicacón suban pruebas de actividades que beneficien a la conservación de las playas y oceanos.
@@ -58,11 +62,15 @@ La aplicación se encuentra en fase de desarrollo, por lo que se pensó en la in
 * Creación de la API para brindar los datos que publica COFEPRIS (Los datos de COFEPRIS se publican en archivos PDF por lo que no es posible consumirlos, es por ello que se está ceando esta API para poder consumir los datos) ✔️
 * Creación del Formulario de Reportes ✔️ (Se tiene una primer versión en maquetación y se esta trabajando con Java y Spring)
 * Uso de la API de Google Maps para mostrar el Mapa con la ubicación del usuario ✔️
-* Visualizacíon de las playas con marcadores de colores del semaforo ❌ (Falta Infreaestructura)
+* Visualizacíon de las playas con marcadores de colores del semaforo ✔️
 * Implementación del sistema de recompensas ❌
-* Implentación del sistema de calificación de las playas por parte de los usuarios ❌
+* Implentación del sistema de calificación de las playas por parte de los usuarios ✔️
 
 *Nota: Hasta que se consiga implementar el sistema de recompenzas los usuarios podrán crear una cuenta para poder almacenar los datos, de momento se cuenta solo con el formulario para generar los reportes.*
+
+## Soy empresario, ¿Por qúe deberia aportar a este proyecto?
+
+Las empresas, ya sean grandes, medianas o pequeñas son fundamentales en la lucha por cuidar el mundo y hacerlo más sostenible ya que afectan de forma directa en la gestión del medio ambiente. Asimismo, es una oportunidad para la innovación y crecimiento. Como establecimientos que se benefician del sector turístico en las playas es importante que aporten al cuidado del lugar donde trabajan y este  proyecto es una gran oportunidad para ser reconocidos como empresas comprometidas con el medio ambiente.
 
 ## Chat-Bot - CREACIÓN
 
@@ -116,3 +124,17 @@ https://apiplayasmx.herokuapp.com/clasificaciones
 Es la calificación o evaluación obtenida por COFEPRIS o SEMARNAT, y que está publicada en diferentes sitios de gobierno.
 
 [ { "id":1, "nombreClasificacion":"APTA", "npm":150, "fechaActualizada":"2022-03-17", "idPlaya":{ "id":1, "nombrePlaya":"Playa de Rosarito", "latitud":32.33555556, "longitud":-117.0577778 } }, ... ]
+
+## Miembros del equipo:
+
+Dudas o aclaraciones sobre el proyecto no dude en consultar a alguno de los miembros de equipo de trabajo: 
+
+**Lider:** Nóe Gustavo Calalpa  launchx00603@innovaccion.mx
+
+José Iván Carranza launchx01934@innovaccion.mx
+
+Maria Fernanda López Zárate launchx00805@innovaccion.mx
+
+David Merino Pérez launchx06140@innovaccion.mx
+
+Abel Ramesess Castillo launchx02121@innovaccion.mx
