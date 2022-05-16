@@ -14,6 +14,67 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4e06a7962f.js" crossorigin="anonymous"></script>
+	<style>
+	.rating {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center
+	}
+
+	.rating>input {
+		display: none
+	}
+
+	.rating>label {
+		position: relative;
+		width: 1em;
+		font-size: 30px;
+		font-weight: 300;
+		color: #FFD600;
+		cursor: pointer
+	}
+
+	.rating>label::before {
+		content: "\2605";
+		position: absolute;
+		opacity: 0
+	}
+
+	.rating>label:hover:before,
+	.rating>label:hover~label:before {
+		opacity: 1 !important
+	}
+
+	.rating>input:checked~label:before {
+		opacity: 1
+	}
+
+	.rating:hover>input:checked~label:before {
+		opacity: 0.4
+	}
+	
+	.section-body{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.section-form,
+	section.map{
+		width: 50%;
+	}
+	#map{
+	  width: 100%;
+	  height: 100%;
+	}
+	@media(max-width: 600px){
+		.section-body{
+			flex-direction: column;
+		}
+		.section-form,
+		section.map{
+			width: 80%;
+		}
+	}
+	</style>
 </head>
 
 <body>
@@ -28,10 +89,8 @@
             <a class="otroN" href="premios.html">Premios</a>
         </nav>
     </header>
-
+	<h1 class="sub-heading-aux">Denuncias</h1>
     <section class="section-body">
-        <h1 class="sub-heading-aux">Denuncias</h1>
-
         <section class="section-form">
             <form action="">
                 <!--el estado va a depender de la playa que seleccione  -->
@@ -39,7 +98,23 @@
                     <label for="select-estado" class="col-sm-2 col-form-label">Estado</label>
                     <div class="col-sm-5">
                         <select name="estado" class="form-select" id="select-estado">
-                            <option value="" selected disabled>Selecciona</option>
+                            <option value="2">Baja California</option>
+							<option value="3">Baja California Sur</option>
+							<option value="4">Campeche</option>
+							<option value="7">Chiapas</option>
+							<option value="6">Colima</option>
+							<option value="12" selected="true">Guerrero</option>
+							<option value="14">Jalisco</option>
+							<option value="16">Michoacán</option>
+							<option value="18">Nayarit</option>
+							<option value="20">Oaxaca</option>
+							<option value="23">Quintana Roo</option>
+							<option value="25">Sinaloa</option>
+							<option value="26">Sonora</option>
+							<option value="27">Tabasco</option>
+							<option value="28">Tamaulipas</option>
+							<option value="30">Veracruz</option>
+							<option value="31">Yucatán</option>
                         </select>
                     </div>
                 </div>
@@ -48,14 +123,32 @@
                     <label for="inputPassword" class="col-sm-2 col-form-label">Playa</label>
                     <div class="col-sm-5">
                         <select name="playa" class="form-select" id="select-playa">
-                            <option value="" selected disabled>Selecciona</option>
-                            <option value="1">fksdfmkfnfjnsfkja</option>
-                            <option value="1">fksdfmkfnfjnsfkja</option>
+                            <option value="1">Rosarito I</option>
+							<option value="2">Rosarito II</option>
+							<option value="3">Hotel Rivera</option>
+							<option value="4">Rosarito III</option>
+							<option value="5">Tijuana II</option>
+							<option value="6">Tijuana III</option>
+							<option value="7">La Joya</option>
+							<option value="8">Monalisa</option>
+							<option value="9">El Ciprés</option>
+							<option value="10">Conalep No. 2</option>
+							<option value="11">Conalep No. 1</option>
+							<option value="12">Hermosa</option>
+							<option value="13">La Misión</option>
+							<option value="14">El Cortéz</option>
+							<option value="15">Los Faisanes</option>
+							<option value="16">Burócratas</option>
+							<option value="17">Dorado Ranch</option>
+							<option value="18">Malecón</option>
+							<option value="19">Bonita</option>
+							<option value="20">Lindo México</option>
+							<option value="21">Marina Resort</option>
                         </select>
                     </div>
                 </div>
 
-                <div class="form-group row">
+                <!-- <div class="form-group row">
                     <label for="fechaHora" class="col-sm-2 col-form-label">Fecha/Hora</label>
                     <div class="col-sm-5">
                         <label for="fechaHora" class="form-control col-sm-2 col-form-label" readonly>
@@ -63,7 +156,16 @@
                         </label>
                     </div>
                 </div>
-
+				-->
+				<div class="form-group row">
+					<div class="rating">
+						<input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+						<input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+						<input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+						<input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+						<input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+					</div>
+				</div>
                 <div class="form-group row">
                     <label for="input-observacion" class="col-sm-2 col-form-label">Observaciones</label>
                     <div class="col-sm-8">
@@ -76,7 +178,11 @@
                 <button type="reset" class="btn btn-danger">Cancelar</button>
             </form>
         </section>
+		<section class="map">
+			<div id="map"></div>
+		</section>
     </section>
+	
 
     <!-- Boton flotante -->
     <div class="cont">
@@ -89,7 +195,10 @@
     <footer>
         <p>Derechos reservados <br> BeachLife - 2022</p>
     </footer>
-
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_JFi2fjbTNJu2uHWjAKyZlLpZ1B-JdcQ&callback=denMap" async defer></script> 
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw2W7qHkTvQvPCIjwNzusXPbMu5ChdXto&callback=denMap" async defer></script> -->
+	<script src="./assets/js/classes.js"></script>
+	<script src="./assets/js/denuncia.js"></script>
 </body>
 
 </html>
