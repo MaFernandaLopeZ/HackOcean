@@ -51,12 +51,12 @@ Para poder obtener puntos se necesita poner las manos a la bra es por ello que s
 
 ## Progreso de la versión actual
 
-La aplicación se encuentra en fase de desarrollo, por lo que la integración de puntos no está aun disponible
+La aplicación se encuentra en fase de desarrollo, por lo que se pensó en la infraestructura en AZURE lo cual está al 90% y en el Front se realizó el maquetado pero aún no se realiza la integración de puntos por lo que esto esta en desarrollo.
 
  A continuación se presenta una lista de lso puntos que contiene el proyecto final marcando con ✔️ los cumplidos y con una ❌ los que aún están en fase de desarrollo
 
 * Creación de la API para brindar los datos que publica COFEPRIS (Los datos de COFEPRIS se publican en archivos PDF por lo que no es posible consumirlos, es por ello que se está ceando esta API para poder consumir los datos) ✔️
-* Creación del Formulario de Reportes ✔️ (Se tiene una primer versión )
+* Creación del Formulario de Reportes ✔️ (Se tiene una primer versión en maquetación y se esta trabajando con Java y Spring)
 * Uso de la API de Google Maps para mostrar el Mapa con la ubicación del usuario ✔️
 * Visualizacíon de las playas con marcadores de colores del semaforo ❌ (Falta Infreaestructura)
 * Implementación del sistema de recompensas ❌
