@@ -52,9 +52,9 @@ La aplicación se encuentra en fase de desarrollo, por lo que la integración de
 ## Chat-Bot - CREACIÓN
 Se creo el Chat-Bot mediante Azure
 
-![img](image/README/Creacion-ChaBot-1.png)
+![img](image/README/Creacion-ChatBot-1.png)
 
-![img](image/README/Creacion-ChaBot-1.png)
+![img](image/README/Creacion-ChatBot-1.png)
 
 Contiene un asistenten virtual llamado Chat-Bot, el cual ayuda a los usuario en cuestiones de usuo de la aplicación mediante palabras clave. 
 La palabra para inicializar el Chat-Bot es "Hola". 
