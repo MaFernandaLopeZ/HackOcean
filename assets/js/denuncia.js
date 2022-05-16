@@ -25,9 +25,9 @@ function centerMap(geoR){
 function createMark(LtLn, playa){
 	const marker = new google.maps.Marker({
 		position: LtLn,
-		MAP,
 		title: playa
 	});
+	marker.setMap(MAP);
 	return marker;
 }
 
@@ -50,7 +50,7 @@ const start = () => {
 	for (let edo of elmEdo.options) {
 		Estados.push(new Estado({id: parseInt(edo.value), nombre: edo.innerHTML }));
 	}
-	
+	MIX();
 	for(let i=0; i<Playas.length; i++){
 		Playas[i].Mark = createMark(
 			{

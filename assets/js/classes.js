@@ -209,6 +209,19 @@ const getByParam = (Obj, param, value) => {
 	return false;
 }
 
+const MIX = () => {
+	for(let i=0; i<Municipios; i++){
+		Municipios[i].setEstado(Municipios[i].idEstado);
+	}
+	for(let i=0; i<Playas; i++){
+		Playas[i].setMuncipio(Playas[i].idMunicipio);
+	}
+	for(let i=0; i<Clasificaciones; i++){
+		Clasificaciones[i].setPlaya(Clasificaciones[i].idPlaya);
+	}
+}
+
+
 const Municipios = [];
 const Playas = [];
 const Estados = [];
