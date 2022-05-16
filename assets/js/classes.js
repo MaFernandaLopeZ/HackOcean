@@ -221,6 +221,15 @@ const MIX = () => {
 	}
 }
 
+const getNpmIcon = (rank) => {
+	let url = './assets/icons/';
+	if(rank){
+		rank = parseInt(rank);
+		return url + ((Math.round(rank/40) * -1) + 5) + '.png';
+	}
+	return url + '100.png';
+}
+
 
 const Municipios = [];
 const Playas = [];

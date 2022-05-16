@@ -22,12 +22,15 @@ function centerMap(geoR){
 	MAP.setCenter(geoR);
 }
 
-function createMark(LtLn, playa){
+function createMark(LtLn, playa, icon=null){
 	const marker = new google.maps.Marker({
 		position: LtLn,
 		title: playa
 	});
 	marker.setMap(MAP);
+	if(icon) {
+		marker.setIcon(icon);
+	}
 	return marker;
 }
 
@@ -52,12 +55,14 @@ const start = () => {
 	}
 	MIX();
 	for(let i=0; i<Playas.length; i++){
+		let npm = Playas[i].Clasificaciones.length ? Playas[i].Clasificaciones[0].npm : false;
 		Playas[i].Mark = createMark(
 			{
 				lat: Playas[i].latitud,
-				lng: Playas[i].longitud
+				lng: Playas[i].longitud,
 			},
-			Playas[i].nombre
+			Playas[i].nombre,
+			getNpmIcon(npm)
 		);
 	}
 	
@@ -83,28 +88,39 @@ const clearSelect = (elmSelect) => {
 	}
 }
 
-window.onload = function() {
-  getApi('municipios.json')
+function loadMunicipios(){
+	getApi('municipios.json')
 	.then((data)=>{
 		for(let i=0; i<data.length; i++){
 			Municipios.push(new Municipio(data[i]));
 		}
+		loadPlayas();
 	});
-	
-  getApi('playas.json')
+}
+
+function loadPlayas(){
+	getApi('playas.json')
 	.then((data)=>{
 		for(let i=0; i<data.length; i++){
 			Playas.push(new Playa(data[i]));
 		}
 		start();
+		loadClasificaciones();
 	});
+}
 
-  getApi('clasificaciones.json')
+function loadClasificaciones(){
+   getApi('clasificaciones.json')
 	.then((data)=>{
 		for(let i=0; i<data.length; i++){
 			Clasificaciones.push(new Clasificacion(data[i]));
 		}
+		start();
 	});
+}
+window.onload = function() {
+	loadMunicipios();
+	
 	if(navigator.geolocation){
 	  navigator.geolocation.getCurrentPosition((geoR) => {
 		MAP.setCenter({
